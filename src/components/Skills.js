@@ -35,8 +35,10 @@ function Skills() {
         <Row>
           <Col>
             <div className="skill-bx"></div>
-            <h2>Skills</h2>
-            <p>LoremIpsum</p>
+            <h2 className="skill-title">Skills</h2>
+            <h3 className="skill-description">
+              Here are my top 5 coding skills..
+            </h3>
             <Carousel
               responsive={responsive}
               infinite={true}

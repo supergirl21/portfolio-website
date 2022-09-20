@@ -2,12 +2,14 @@ import React from "react";
 // import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import avatar from "../assets/img/testi-gloria.svg";
+import avatarg from "../assets/img/testi-gloria.svg";
+import avatars from "../assets/img/testi-sundar.svg";
+import avatarA from "../assets/img/testi-ada.svg";
 
 function Testimonials() {
   return (
     <section className="testimonial" id="testionials">
-      <h1>Testimonials</h1>
+      <h2 className="testimonial-title">Testimonials</h2>
       <h3>Find out what the people I've worked with are saying about me..</h3>
       <div>
         <Carousel
@@ -19,7 +21,7 @@ function Testimonials() {
           interval={6100}
         >
           <div>
-            <img src={avatar} alt="Gloria" />
+            <img src={avatarg} alt="Gloria" />
             <div className="myCarousel">
               <h3>Gloria Ng</h3>
               <h4>Engineering Manager, AnnieCannons’ ResourceFull app</h4>
@@ -38,7 +40,7 @@ function Testimonials() {
           </div>
 
           <div>
-            <img src={avatar} alt="" />
+            <img src={avatars} alt="Sundar" />
             <div className="myCarousel">
               <h3>Sundar Pichai</h3>
               <h4>CEO, Google</h4>
@@ -50,10 +52,10 @@ function Testimonials() {
           </div>
 
           <div>
-            <img src={avatar} alt="" />
+            <img src={avatarA} alt="Ada-lovelace" />
             <div className="myCarousel">
-              <h3>Theo Sorel</h3>
-              <h4>Designer</h4>
+              <h3>Ada Lovelace</h3>
+              <h4>First Computer Programmer</h4>
               <p>
                 I enjoy catching up with Fetch on my laptop, or on my phone when
                 I'm on the go!
