@@ -40,7 +40,10 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse
+          className="collapse navbar-collapse"
+          id="basic-navbar-nav"
+        >
           <Nav className="me-auto">
             <Nav.Link
               href="#about"

@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
+// import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 // import headerImg from "../assets/img/header-img.svg";
-// import dona from "../assets/img/dona.png";
-import dona1 from "../assets/img/dona.png";
+import dona1 from "../assets/img/dona-profile.jpg";
 
-function Banner() {
+const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Front End Developer",
+    "FrontEnd Developer",
     "Aspiring FullStack Developer",
     "Photographer",
   ];
@@ -60,9 +60,11 @@ function Banner() {
             </p>
             <h1>
               {`Hi, I'm Supergirl. `}
-              <span className="wrap">{text}</span>
+              <span className="wrap textColor">{text}</span>
             </h1>
+
             <h2>"I help bring digital product ideas come to life”</h2>
+
             <button onCLick={() => console.log("connect")}>
               Let's Connect <ArrowRightCircle size={25} />
             </button>
@@ -75,6 +77,6 @@ function Banner() {
       </Container>
     </section>
   );
-}
+};
 
 export default Banner;

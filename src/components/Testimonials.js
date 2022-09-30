@@ -1,14 +1,17 @@
 import React from "react";
+// import { Container, Row } from "react-bootstrap";
 // import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import avatarg from "../assets/img/testi-gloria.svg";
+import avatarRev from "../assets/img/testi-gloria.svg";
 import avatars from "../assets/img/testi-sundar.svg";
-import avatarA from "../assets/img/testi-ada.svg";
+import avatarCatie from "../assets/img/testi-catie.svg";
 
 function Testimonials() {
   return (
     <section className="testimonial" id="testionials">
+      {/* <Container>
+        <Row> */}
       <h2 className="testimonial-title">Testimonials</h2>
       <h3>Find out what the people I've worked with are saying about me..</h3>
       <div>
@@ -21,7 +24,7 @@ function Testimonials() {
           interval={6100}
         >
           <div>
-            <img src={avatarg} alt="Gloria" />
+            <img src={avatarRev} alt="Gloria" />
             <div className="myCarousel">
               <h3>Gloria Ng</h3>
               <h4>Engineering Manager, AnnieCannons’ ResourceFull app</h4>
@@ -52,18 +55,28 @@ function Testimonials() {
           </div>
 
           <div>
-            <img src={avatarA} alt="Ada-lovelace" />
+            <img src={avatarCatie} alt="Ada-lovelace" />
             <div className="myCarousel">
-              <h3>Ada Lovelace</h3>
-              <h4>First Computer Programmer</h4>
+              <h3>Catie Heart</h3>
+              <h4>Instructor/Team Lead, AnnieCannons</h4>
               <p>
-                I enjoy catching up with Fetch on my laptop, or on my phone when
-                I'm on the go!
+                I have been lucky enough to get to know Dona in many capacities
+                - as her instructor, teammate, and technical lead. Dona is
+                always the hardest worker on the team. She consistently strives
+                to do her best possible work, and her love of learning is
+                inspiring to those around her. As tech lead, I always assigned
+                Dona the most challenging tickets with full confidence in her
+                ability to complete them on time, even when they required her to
+                learn new skills. Dona is kind, humble, dependable, and
+                brilliant. She will not squander any opportunity that comes her
+                way and I give her my full recommendation.
               </p>
             </div>
           </div>
         </Carousel>
       </div>
+      {/* </Row>
+      </Container> */}
     </section>
   );
 }
