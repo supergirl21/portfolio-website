@@ -7,6 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ProjectCard from "./components/ProjectCard";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+// import MailchimpForm from "./components/MailchimpForm";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Projects />
       <ProjectCard />
       <Testimonials />
+      <Contact />
+      {/* <MailchimpForm /> */}
+      <Footer />
     </div>
   );
 }

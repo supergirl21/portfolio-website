@@ -98,7 +98,7 @@ p.danger {
 /* -------------NAvBar------------- */
 
 nav.navbar {
-  padding: 18px 0;
+  padding: 5px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -369,17 +369,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   
 }
+.connect-button {
+  padding-bottom: 40px;
+}
 .banner button:hover svg {
   margin-left: 25px;
+}
+.align-items-center img {
+  width: 100%;
+  height: auto;
 }
 @media (min-width:375px) {
   
 	.banner img {
+    /* padding-top: 20px; */
     border-radius: 50%;
     animation: updown 3s linear infinite;
-    height:450px;
-    width: 480px;
-    /* background: linear-gradient(to bottom, #57B2FF, #0086F8); */
+    /* height:450px;
+    width: 480px; */
+    height:auto;
+    width: 100%;
+    /* background: linear-g
+    radient(to bottom, #57B2FF, #0086F8); */
     box-shadow: 0px 5px 20px 1px;
     color:rgb(3, 38, 52);
     /* animation: App-logo-spin infinite 20s linear; */
@@ -441,11 +452,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0, auto;
   position: relative;
 }
-.skill-slider .item img {
+/* .skill-slider .item img {
   width: 50%;
   margin: 0, auto 15px auto; 
   
-}
+} */
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -551,6 +562,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
+
+.proj-imgbx img {
+  width: 100%;
+  height: auto;
+}
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -600,16 +616,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(90.21deg, #7A069A -5.91%, #0e45dc 111.58%);
+  padding: 70px 0 60px 0;
 }
 .contact img {
   width: 92%;
+  padding-bottom: 20px;
 }
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+}
+.textArea .col{
+  padding: 0 4px;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -617,13 +637,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   color: #fff;
-  margin: 0 0 8px 0;
+  margin: 10px 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
+
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
@@ -636,6 +657,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
+  
 }
 .contact form button {
   font-weight: 700;
@@ -644,13 +666,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  /* border-radius: 0px; */
   position: relative;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
 }
 .contact form button span {
   z-index: 1;
   position: relative;
+ 
 }
 .contact form button:hover {
   color: #fff;
@@ -665,6 +689,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
 }
 .contact form button:hover::before {
   width: 100%;
@@ -877,7 +902,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* -----------footer------------ */
 .footer {
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -944,7 +969,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  width: 150px;
 }
 .footer p {
   font-weight: 400;

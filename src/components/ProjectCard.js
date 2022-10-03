@@ -1,11 +1,12 @@
 import { Col } from "react-bootstrap";
-// import imgUrl from "../assets/img/project-img1.png";
+import imgUrl from "../assets/img/project-img1.png";
 
 function ProjectCard({ title, description, imgUrl }) {
   return (
-    <Col sm={6} md={4}>
+    <Col xs={12} md={6}>
+      {/* <Col sm={8} md={6}> */}
       <div className="proj-imgbx">
-        <img src={imgUrl} alt="img-Url" />
+        <img src={imgUrl} alt="img-Urls" />
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>

@@ -11,32 +11,7 @@ import projRfMob from "../assets/img/rfApp.png";
 import projFocus from "../assets/img/proj-focus-app.png";
 
 function Projects() {
-  const projects = [
-    {
-      title: "Netflix Clone",
-      description:
-        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
-      imgUrl: projNetflix,
-    },
-    {
-      title: "Instagram Clone",
-      description:
-        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
-      imgUrl: projIg,
-    },
-    {
-      title: "Focus Time App",
-      description:
-        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
-      imgUrl: projFocus,
-    },
-
-    {
-      title: "Reproductive Health App",
-      description:
-        "This project was built in React Native to hone my skills in creating mobile apps. It uses Firebase and Expo that uploads and queries photos stored on a real-time server.",
-      imgUrl: projAya,
-    },
+  const professionalProjects = [
     {
       title: "LightHouse",
       description:
@@ -54,6 +29,32 @@ function Projects() {
       description:
         "This app project brings Pomodoro Technique and To Do List into one place, you can capture and organize tasks into your to-do lists, start a focus timer and focus on work & study, set reminders for important tasks and errands, and check the time spent at work.",
       imgUrl: projRfWeb,
+    },
+    {
+      title: "Reproductive Health App",
+      description:
+        "This project was built in React Native to hone my skills in creating mobile apps. It uses Firebase and Expo that uploads and queries photos stored on a real-time server.",
+      imgUrl: projAya,
+    },
+  ];
+  const personalProjects = [
+    {
+      title: "Netflix Clone",
+      description:
+        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
+      imgUrl: projNetflix,
+    },
+    {
+      title: "Instagram Clone",
+      description:
+        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
+      imgUrl: projIg,
+    },
+    {
+      title: "Focus Time App",
+      description:
+        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
+      imgUrl: projFocus,
     },
   ];
   return (
@@ -78,35 +79,29 @@ function Projects() {
                 <Nav.Item>
                   <Nav.Link eventKey="second">Personal</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  {/* <Nav.Link eventKey="third">Tab 2</Nav.Link> */}
-                </Nav.Item>
               </Nav>
               <Tab.Content className="project-image">
                 <Tab.Pane eventKey="first">
                   <Row className="project-image">
-                    {projects.map((project, index) => {
+                    {professionalProjects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
-                {/* <Row className="project-image">
-                  {projects.map((project, index) => {
-                    return <ProjectCard key={index} {...project} />;
-                  })}
-                </Row> */}
-                {/* <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane> */}
+                <Tab.Pane eventKey="second">
+                  These are my chosen personal projects I made during my free
+                  time.
+                  <Row className="project-image">
+                    {personalProjects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
         </Row>
       </Container>
-      {/* <img
-        className="background-img-right"
-        src={colorSharp2}
-        alt="background-img"
-      /> */}
     </section>
   );
 }

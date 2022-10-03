@@ -65,10 +65,14 @@ const Banner = () => {
 
             <h2>"I help bring digital product ideas come to life”</h2>
 
-            <button onCLick={() => console.log("connect")}>
+            <button
+              className="connect-button"
+              onCLick={() => console.log("connect")}
+            >
               Let's Connect <ArrowRightCircle size={25} />
             </button>
           </Col>
+          {/* <Col xs={12} md={6}> */}
           <Col xs={12} md={6} xl={5}>
             {/* <img src={headerImg} alt="Header Img" /> */}
             <img src={dona1} alt="Header Img" />
