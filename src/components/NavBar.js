@@ -1,3 +1,8 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable semi */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/react-in-jsx-scope */
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 // import logo from "../assets/img/logo.png";

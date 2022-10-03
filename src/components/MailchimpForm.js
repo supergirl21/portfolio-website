@@ -1,3 +1,8 @@
+/* eslint-disable semi */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable react/react-in-jsx-scope */
+// eslint-disable-next-line semi
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 // import Newsletter from "./components/Newsletter";
 

@@ -1,3 +1,9 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable semi */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import contactImg from "../assets/img/dona-contact-me.png";
@@ -13,7 +19,8 @@ function Contact() {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
+
+  const [status] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({

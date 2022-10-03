@@ -1,5 +1,9 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line semi
 import { Col } from "react-bootstrap";
-import imgUrl from "../assets/img/project-img1.png";
 
 function ProjectCard({ title, description, imgUrl }) {
   return (
@@ -13,6 +17,8 @@ function ProjectCard({ title, description, imgUrl }) {
         </div>
       </div>
     </Col>
+    // eslint-disable-next-line semi
   );
 }
+// eslint-disable-next-line semi
 export default ProjectCard;

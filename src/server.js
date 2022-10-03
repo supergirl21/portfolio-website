@@ -1,3 +1,5 @@
+/* eslint-disable semi */
+/* eslint-disable quotes */
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
@@ -16,8 +18,8 @@ const contactEmail = nodemailer.createTransport({
   services: "gmail",
   auth: {
     user: "********@gmail.com",
-    pass: "",
-  },
+    pass: ""
+  }
 });
 
 contactEmail.verify((error) => {
@@ -40,7 +42,7 @@ router.post("/contact", (req, res) => {
     html: `<p>Name: ${name}</p>
                 <p>Name: ${email}</p>
                 <p>Name: ${phone}</p>
-                <p>Name: ${message}</p>`,
+                <p>Name: ${message}</p>`
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {

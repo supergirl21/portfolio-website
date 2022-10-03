@@ -1,3 +1,8 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
+/* eslint-disable semi */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState } from "react";
 // import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
@@ -15,10 +20,10 @@ const Banner = () => {
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000; //transition time between words
+  const period = 2000; // transition time between words
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
       tick();
     }, delta);
     return () => {
@@ -27,9 +32,9 @@ const Banner = () => {
   }, [text]);
 
   const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
@@ -59,7 +64,7 @@ const Banner = () => {
               <span>Highly ambitious and passionate</span>
             </p>
             <h1>
-              {`Hi, I'm Supergirl. `}
+              {"Hi, I'm Supergirl. "}
               <span className="wrap textColor">{text}</span>
             </h1>
 
@@ -67,7 +72,7 @@ const Banner = () => {
 
             <button
               className="connect-button"
-              onCLick={() => console.log("connect")}
+              onClick={() => console.log("connect")}
             >
               Let's Connect <ArrowRightCircle size={25} />
             </button>

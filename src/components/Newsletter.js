@@ -1,3 +1,7 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable semi */
+/* eslint-disable react/react-in-jsx-scope */
 import { Alert, Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 

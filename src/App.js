@@ -1,3 +1,6 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable semi */
 import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";

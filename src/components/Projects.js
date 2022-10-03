@@ -1,3 +1,8 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable semi */
+/* eslint-disable react/react-in-jsx-scope */
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCard";

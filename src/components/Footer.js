@@ -1,9 +1,11 @@
-import MailchimpForm from "./MailchimpForm";
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo4.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+/* eslint-disable space-before-function-paren */
+/* eslint-disable react/react-in-jsx-scope */
+import MailchimpForm from './MailchimpForm'
+import { Container, Row, Col } from 'react-bootstrap'
+import logo from '../assets/img/logo4.png'
+import navIcon1 from '../assets/img/nav-icon1.svg'
+import navIcon2 from '../assets/img/nav-icon2.svg'
+import navIcon3 from '../assets/img/nav-icon3.svg'
 
 function Footer() {
   return (
@@ -43,6 +45,6 @@ function Footer() {
         </Row>
       </Container>
     </footer>
-  );
+  )
 }
-export default Footer;
+export default Footer
