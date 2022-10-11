@@ -4,7 +4,7 @@
 /* eslint-disable semi */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/react-in-jsx-scope */
-import { useState } from "react";
+import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import contactImg from "../assets/img/dona-contact-me.png";
 
@@ -19,8 +19,7 @@ function Contact() {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-
-  const [status] = useState({});
+  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -32,21 +31,24 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    // let respone = await fetch("http://localhost:5000/contact")s,{
-    //     method: "POST",
-    //     headers: {
-    //     "Content-Type": "Application/json;charset=utf-8",
-    //     },
-    //     body: JSON.stringify(formDetails),
-    // });
-    // setButtonText("Send");
-    // let result = response.json();
-    // setFormDetails(formInitialDetails);
-    // if (result.code === 200) {
-    //     setStatus({ success: true, message: "Message sent successfully"});
-    // } else {
-    //     setStatus({success: false, message: "Something went wrong,please try again later."})
-    // }
+    const response = await fetch("http://localhost:3000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json;charset=utf-8",
+      },
+      body: JSON.stringify(formDetails),
+    });
+    setButtonText("Send");
+    const result = response.json();
+    setFormDetails(formInitialDetails);
+    if (result.code === 200) {
+      setStatus({ success: true, message: "Message sent successfully" });
+    } else {
+      setStatus({
+        success: false,
+        message: "Something went wrong,please try again later.",
+      });
+    }
   };
 
   return (
@@ -60,7 +62,7 @@ function Contact() {
             <h2>Get In Touch</h2>
             <form onSubmit={{ handleSubmit }}>
               <Row>
-                <Col sm={6} className="px-1">
+                <Col sm={6}>
                   <input
                     type="text"
                     value={formDetails.firstName}
@@ -68,7 +70,7 @@ function Contact() {
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
-                <Col sm={6} className="px-1">
+                <Col sm={6}>
                   <input
                     type="text"
                     value={formDetails.lastName}
@@ -76,7 +78,7 @@ function Contact() {
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
-                <Col sm={6} className="px-1">
+                <Col sm={6}>
                   <input
                     type="text"
                     value={formDetails.email}
@@ -84,7 +86,7 @@ function Contact() {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
-                <Col sm={6} className="px-1">
+                <Col sm={6}>
                   <input
                     type="text"
                     value={formDetails.phone}

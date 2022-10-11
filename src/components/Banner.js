@@ -1,12 +1,7 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable quotes */
-/* eslint-disable semi */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/react-in-jsx-scope */
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 // import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+// import { ArrowRightCircle } from "react-bootstrap-icons";
 // import headerImg from "../assets/img/header-img.svg";
 import dona1 from "../assets/img/dona-profile.jpg";
 
@@ -60,22 +55,22 @@ const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio!</span>
-            <p>
-              <span>Highly ambitious and passionate</span>
-            </p>
+            {/* <p>
+              <span>Ambitious and passionate</span>
+            </p> */}
             <h1>
-              {"Hi, I'm Supergirl. "}
+              {"Hi, I'm Dona. "}
               <span className="wrap textColor">{text}</span>
             </h1>
 
             <h2>"I help bring digital product ideas come to life”</h2>
 
-            <button
+            {/* <button
               className="connect-button"
               onClick={() => console.log("connect")}
             >
               Let's Connect <ArrowRightCircle size={25} />
-            </button>
+            </button> */}
           </Col>
           {/* <Col xs={12} md={6}> */}
           <Col xs={12} md={6} xl={5}>

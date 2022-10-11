@@ -3,6 +3,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line semi
+import React from "react";
 import { Col } from "react-bootstrap";
 
 function ProjectCard({ title, description, imgUrl }) {
@@ -10,7 +11,7 @@ function ProjectCard({ title, description, imgUrl }) {
     <Col xs={12} md={6}>
       {/* <Col sm={8} md={6}> */}
       <div className="proj-imgbx">
-        <img src={imgUrl} alt="img-Urls" />
+        <img src={imgUrl} alt="" />
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>

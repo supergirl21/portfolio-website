@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 /* eslint-disable semi */
 /* eslint-disable quotes */
 const express = require("express");
@@ -5,21 +6,21 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 
-// server ued to send emails
+// server used to send emails
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+app.listen(3000, () => console.log("Server Running"));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
-  services: "gmail",
+  service: "gmail",
   auth: {
-    user: "********@gmail.com",
-    pass: ""
-  }
+    user: "madonagino21@gmail.com",
+    pass: "",
+  },
 });
 
 contactEmail.verify((error) => {
@@ -38,11 +39,11 @@ router.post("/contact", (req, res) => {
   const mail = {
     from: name,
     to: "********@gmail.com",
-    subject: "Contact Form Submission - Postfolio",
+    subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
                 <p>Name: ${email}</p>
                 <p>Name: ${phone}</p>
-                <p>Name: ${message}</p>`
+                <p>Name: ${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {

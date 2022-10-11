@@ -12,7 +12,7 @@ import Projects from "./components/Projects";
 import ProjectCard from "./components/ProjectCard";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// import MailchimpForm from "./components/MailchimpForm";
+import MailchimpForm from "./components/MailchimpForm";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
       <ProjectCard />
       <Testimonials />
       <Contact />
-      {/* <MailchimpForm /> */}
+      <MailchimpForm />
       <Footer />
     </div>
   );

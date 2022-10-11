@@ -1,7 +1,12 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable quotes */
+/* eslint-disable semi */
+// eslint-disable-next-line quotes
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import swift from "programming-languages-logos/src/swift/swift.svg";
 import react from "../assets/img/React.svg";
 import html from "../assets/img/HTML.svg";
 import css from "../assets/img/CSS.svg";

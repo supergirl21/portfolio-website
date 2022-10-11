@@ -3,15 +3,15 @@
 /* eslint-disable semi */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/react-in-jsx-scope */
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 // import logo from "../assets/img/logo.png";
 import logo from "../assets/img/logo4.png";
 // import logo from "../assets/img/DonaGino.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import avatar from "../assets/img/dona-avatar-smile1.svg";
+import navIconLinkedIn from "../assets/img/nav-icon1.svg";
+// import navIconFacebook from "../assets/img/nav-icon2.svg";
+import navIconGithub from "../assets/img/logo_github.svg";
+import avatar from "../assets/img/dona-avatar-smile.svg";
 
 function NavBar() {
   // export const NavBar = () ={
@@ -88,32 +88,38 @@ function NavBar() {
             >
               Testimonials
             </Nav.Link>
+            <Nav.Link
+              href="#contact"
+              className={
+                activeLink === "contact" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("contact")}
+            >
+              Contact
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
               <a
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/dona-g"
               >
-                <img src={navIcon1} alt="linked-in" />
+                <img src={navIconLinkedIn} alt="linked-in" />
               </a>
               <a
                 target="_blank"
-                rel="noreferrer"
-                href="https://www.facebook.com/"
+                rel="noopener noreferrer"
+                href="https://github.com/supergirl21"
               >
-                <img src={navIcon2} alt="facebook" />
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/dona_gino/"
-              >
-                <img src={navIcon3} alt="instagram" />
+                <img src={navIconGithub} alt="github" />
               </a>
               <img className="avatar" src={avatar} alt="Avatar Img" />
-              <button className="vvd" onClick={() => console.log("connect")}>
+              <button
+                className="vvd"
+                href="#skills"
+                onClick={() => console.log("connect")}
+              >
                 <span>Let's Connect</span>
               </button>
             </div>

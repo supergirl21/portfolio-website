@@ -3,6 +3,7 @@
 /* eslint-disable quotes */
 /* eslint-disable semi */
 /* eslint-disable react/react-in-jsx-scope */
+import React from "react";
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCard";
@@ -12,54 +13,62 @@ import projIg from "../assets/img/instagramClone.png";
 import projAya from "../assets/img/proj-ayaApp.png";
 import projLight from "../assets/img/proj-lighthouse.png";
 import projRfWeb from "../assets/img/rfWebApp.png";
-import projRfMob from "../assets/img/rfApp.png";
+import projRfMob from "../assets/img/proj-ResourceFull.svg";
 import projFocus from "../assets/img/proj-focus-app.png";
+import projPersonalWebsite from "../assets/img/personalWebsite.svg";
 
 function Projects() {
   const professionalProjects = [
     {
+      title: "ResourceFull Web App",
+      description:
+        "An innovative software solution intended for Service Providers that will help connect survivors of trafficking to resources in their communities. This wep app project was built in React JS which uses AWS Lambda. I have Developed the Sign-up portal in React JS to input data in the frontend which resulted in avoiding hard coding in the backend, refined the Provider Profile, Filters, and Survivor Location and added some location options for the user to choose from and modified the Saved Search feature in the app so that it will only allow providers to save based on titles.",
+      imgUrl: projRfWeb,
+    },
+    {
       title: "LightHouse",
       description:
-        "This project was built in React Native to hone my skills in creating mobile apps. It uses Firebase and Expo that uploads and queries photos stored on a real-time server.",
+        "An innovative software solution that helps people and organizations understand trends in human trafficking, spot victims of exploitation, and coordinate quality care.",
       imgUrl: projLight,
     },
     {
       title: "ResourceFull Mobile App",
       description:
-        "This app project brings Pomodoro Technique and To Do List into one place, you can capture and organize tasks into your to-do lists, start a focus timer and focus on work & study, set reminders for important tasks and errands, and check the time spent at work.",
+        "An innovative software solution that will help connect survivors of trafficking to resources in their communities.",
       imgUrl: projRfMob,
     },
-    {
-      title: "ResourceFull Web App",
-      description:
-        "This app project brings Pomodoro Technique and To Do List into one place, you can capture and organize tasks into your to-do lists, start a focus timer and focus on work & study, set reminders for important tasks and errands, and check the time spent at work.",
-      imgUrl: projRfWeb,
-    },
+
     {
       title: "Reproductive Health App",
       description:
-        "This project was built in React Native to hone my skills in creating mobile apps. It uses Firebase and Expo that uploads and queries photos stored on a real-time server.",
+        "This Reproductive mobile health app was built in React JS. This app's mission is to help empower women and girls living in settings where they face disproportionate barriers to accessing SRH tools and services. It uses Contentful framework, a Content Management System to manage its content. ",
       imgUrl: projAya,
     },
   ];
   const personalProjects = [
     {
-      title: "Netflix Clone",
-      description:
-        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
-      imgUrl: projNetflix,
-    },
-    {
       title: "Instagram Clone",
       description:
-        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
+        "This project was built using React Native Framework (including custom hooks, useContext, useState, useEffect, & useRef), Firebase and Linkify.",
       imgUrl: projIg,
     },
     {
       title: "Focus Time App",
       description:
-        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
+        "This project is based on Promodoro Technique. User can change their Focus Time as they wish. This uses React Native which combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.",
       imgUrl: projFocus,
+    },
+    {
+      title: "This Personal Website",
+      description:
+        "This project is built in React JS Framework. I've integrated MailChimp, CSS Animation, API calls and used Netlify to deply my code via Github.",
+      imgUrl: projPersonalWebsite,
+    },
+    {
+      title: "Netflix Clone",
+      description:
+        "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
+      imgUrl: projNetflix,
     },
   ];
   return (
@@ -93,9 +102,9 @@ function Projects() {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">
-                  These are my chosen personal projects I made during my free
-                  time.
+                <Tab.Pane eventKey="second" className="personal-proj-desc">
+                  {/* These are my chosen personal projects I made during my free
+                  time. */}
                   <Row className="project-image">
                     {personalProjects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;

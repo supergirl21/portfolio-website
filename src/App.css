@@ -130,7 +130,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 .navbar-toggler  {
   color: white;
   border: white;
-  height: 20px;
+  /* height: 20px; */
   background-color: white !important; 
 }
 
@@ -198,8 +198,9 @@ social-icon a::before {
   border-radius: 20px;
 }
 .social-icon .avatar  {
-  margin-left: -10px;
-  height: 80px;
+  margin-right: 5px;
+  margin-left: -3px;
+  height: 76px;
   width: auto;
 }
 .navbar-text button span {
@@ -503,6 +504,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
 /* .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -526,6 +528,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+ 
 }
 .project .nav.nav-pills .nav-link::before {
     content: "";
@@ -588,6 +591,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  padding: 0 10px 0 10px;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -614,7 +618,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #7A069A -5.91%, #0e45dc 111.58%);
   padding: 70px 0 60px 0;
@@ -631,7 +635,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .textArea .col{
   padding: 0 4px;
 }
-.contact form input, .contact form textarea {
+.contact form input, .contact form  textarea{
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -644,6 +648,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
+/* .contact textarea {
+  width: 103%;
+  margin-right: 20px!important;
+} */
 
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
@@ -666,6 +674,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
+ 
   /* border-radius: 0px; */
   position: relative;
   transition: 0.3s ease-in-out;
@@ -693,6 +702,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
 }
 
 
@@ -712,9 +722,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
 }
-/* .testimonial h3 {
-  padding-top: 30px;
-} */
+.testimonial h3 {
+  padding-top: 5px;
+}
 .testimonial {
   background-image: url('./assets/img/color-sharp.png');
   background-position: top center;
@@ -723,8 +733,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .carousel-root {
-  width: 64% !important;
-  /* width: 100% ; */
+  /* width: 64% !important; */
+  width: 80vw ;
   margin: auto !important;
   margin-top: 3% !important;
 }
@@ -754,6 +764,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-left: 5%;
   padding-right: 5%;
   border: 10px solid rgb(11, 127, 222);
+  /* background-color: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   background-color: #fff rgb(142, 193, 248);
   /* border: 1px solid #ddd; */
   height: 350px;
@@ -764,6 +775,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-left: 5px !important;
   outline: 0;
   bottom: 5% !important;
+  
 }
 
 .myCarousel h3 {
@@ -813,8 +825,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .carousel .control-dots .dot {
   box-shadow: none !important;
-  background: #454545 !important;
+  /* background: #454545 !important; */
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)!important;;
   outline: 0;
+  width: 20px !important;
+  height: 20px !important;
+
 }
 
 .carousel.carousel-slider .control-arrow {
@@ -908,6 +924,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.sgquote  {
+  font-style: italic;
+  padding-top: 5px;
+}
+
 .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;
