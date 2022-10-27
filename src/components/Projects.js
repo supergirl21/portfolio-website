@@ -7,7 +7,7 @@ import React from "react";
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import ProjectCard from "./ProjectCard";
-// import colorSharp2 from "../assets/img/color-sharp2.png";/
+// import colorSharp2 from "../assets/img/color-sharp2.png";
 import projNetflix from "../assets/img/netflixClone.png";
 import projIg from "../assets/img/instagramClone.png";
 import projAya from "../assets/img/proj-ayaApp.png";
@@ -16,6 +16,8 @@ import projRfWeb from "../assets/img/rfWebApp.png";
 import projRfMob from "../assets/img/proj-ResourceFull.svg";
 import projFocus from "../assets/img/proj-focus-app.png";
 import projPersonalWebsite from "../assets/img/personalWebsite.svg";
+import "animate.css";
+// import TrackVisibility from "react-on-screen";
 
 function Projects() {
   const professionalProjects = [
@@ -69,6 +71,7 @@ function Projects() {
       description:
         "This project is a streamlined version of Netflix's front end. React and CSS were used in its creation (Grid and Flexbox). To look up movies and display information, it searches The MovieDB API. The fundamental features of the original project are present in this one.",
       imgUrl: projNetflix,
+      link: "https://supergirl-netflix-clone.netlify.app/",
     },
   ];
   return (
@@ -76,8 +79,17 @@ function Projects() {
       <Container>
         <Row>
           <Col>
+            {/* <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                > */}
             <h1>Projects</h1>
-            <p>Take a look at some of my work.</p>
+            {/* <h1>My Creative Portfolio Section</h1> */}
+            <p>Take A Look At My Creative Portfolio Section.</p>
+
             <Tab.Container
               id="left-projects-tabs-example"
               defaultActiveKey="first"
@@ -113,9 +125,13 @@ function Projects() {
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
+            {/* </div>
+              )}
+            </TrackVisibility> */}
           </Col>
         </Row>
       </Container>
+      {/* <img className="background-image-right" src={colorSharp2}></img> */}
     </section>
   );
 }

@@ -2,6 +2,7 @@
 /* eslint-disable quotes */
 /* eslint-disable semi */
 /* eslint-disable react/react-in-jsx-scope */
+import React from "react";
 import { Alert, Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 
@@ -14,11 +15,11 @@ function Newsletter(onValidated, status, message) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    //   email &&
-    //   email.indexOf(@)> -1 &&
-    //   onValidated({
-    //       EMAIL: email
-    //   })
+    email &&
+      email.indexOf("@") > -1 &&
+      onValidated({
+        EMAIL: email,
+      });
   };
 
   const clearFields = () => {
@@ -31,7 +32,7 @@ function Newsletter(onValidated, status, message) {
           <Col lg={12} md={6} xl={5}>
             <h3>Subscribe to our Newsletter</h3>
             {status === "sending" && <Alert>Sending...</Alert>}
-            {status === "error" && <Alert variat="danger">{message}</Alert>}
+            {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "success" && <Alert variant="success">{message}</Alert>}
           </Col>
           <Col md={6} xl={7}>

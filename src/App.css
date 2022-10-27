@@ -58,29 +58,31 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
   line-height: normal;
 }
-/* p, a, li, button, ul {
-  margin: 0;
+/* ------------------------------- */
+p, a, li, button, ul {
+ margin: 0;
   padding: 0;
   line-height: normal;
   text-decoration: none;
-} */
+} 
 
-/* a:hover {
+a:hover {
   text-decoration: none;
-} */
+}
 
 /* img {
   width: 100%;
   height: auto;
-} */
+ }  */
+/* ------------------------------- */
 button {
   border: 0;
   background-color: transparent;
 }
 
-/* input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
-} */
+}
 
 @media (min-width:1700px) {
 	main .container {
@@ -130,8 +132,9 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 .navbar-toggler  {
   color: white;
   border: white;
-  /* height: 20px; */
-  background-color: white !important; 
+  height: 50px;
+  /* background-color: white !important;  */
+  border: 2px solid white !important;
 }
 
 nav.bar .navbar-nav a.nav-link.navbar-link:hover, 
@@ -142,6 +145,7 @@ span.navbar-text {
   display: flex;
   align-items: center;
 }
+
 .social-icon {
   display: inline-block;
   margin-left: 14px;
@@ -227,8 +231,8 @@ social-icon a::before {
   height: 100%;
   position: absolute;
 }
-nav.navbar .navbar-toggle:active,
-nav.navbar .navbar-toggle:focus {
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
@@ -286,6 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   );
 
 }
+
 /* Banner */
 .banner {
   margin-top: 0;
@@ -316,13 +321,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 .banner .tagline {
+  
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 70px;
   display: inline-block;
 }
 .banner h1 {
@@ -336,6 +342,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner h2 {
   font-weight: 700;
+  padding-bottom: 50px;
 }
 .banner .textColor {
   color: #00C2CB;
@@ -371,7 +378,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 }
 .connect-button {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  margin-bottom: 20px;
 }
 .banner button:hover svg {
   margin-left: 25px;
@@ -384,7 +392,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 	.banner img {
     /* padding-top: 20px; */
-    border-radius: 50%;
+    border-radius: 10%;
     animation: updown 3s linear infinite;
     /* height:450px;
     width: 480px; */
@@ -392,7 +400,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 100%;
     /* background: linear-g
     radient(to bottom, #57B2FF, #0086F8); */
-    box-shadow: 0px 5px 20px 1px;
+    box-shadow: 0px 3px 10px 1px;
     color:rgb(3, 38, 52);
     /* animation: App-logo-spin infinite 20s linear; */
   }
@@ -572,7 +580,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #AF05AA -5.91%, #0416AF 111.58%);
+  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%) */
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -743,6 +752,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* background: #fff !important; */
   color: black;
   height: 100%;
+  width: max-content;
   padding: auto;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -756,18 +766,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .myCarousel { 
   background: #fafafa;
   margin-top: -6%;
-  width: 70%;
+  width: 80%;
+  /* width: fit-content; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
-  padding-bottom: 8%;
+  padding-bottom: 10%;
   padding-left: 5%;
   padding-right: 5%;
-  border: 10px solid rgb(11, 127, 222);
+  border: 10px solid #4A2FBD;
+  /* border: 10px  linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)!important; */
   /* background-color: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   background-color: #fff rgb(142, 193, 248);
   /* border: 1px solid #ddd; */
-  height: 350px;
+  /* height: 380px; */
+  height: fit-content;
   border-radius: 100em;
 }
 
@@ -826,7 +839,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .carousel .control-dots .dot {
   box-shadow: none !important;
   /* background: #454545 !important; */
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)!important;;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)!important;
   outline: 0;
   width: 20px !important;
   height: 20px !important;
@@ -982,7 +995,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #AF05AA -5.91%, #0416AF 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;

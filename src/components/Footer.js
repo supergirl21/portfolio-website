@@ -3,7 +3,7 @@
 /* eslint-disable space-before-function-paren */
 /* eslint-disable react/react-in-jsx-scope */
 import React from "react";
-import MailchimpForm from "./MailchimpForm";
+// import MailchimpForm from "./MailchimpForm";
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/img/logo4.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
@@ -14,7 +14,7 @@ function Footer() {
     <footer className="footer">
       <Container>
         <Row className="align-item-center">
-          <MailchimpForm />
+          {/* <MailchimpForm /> */}
           <Col sm={5}>
             <img src={logo} alt="Logo" />
           </Col>
@@ -35,6 +35,15 @@ function Footer() {
                 <img src={navIconGithub} alt="github" />
               </a>
             </div>
+            {/* <p className="sgquote">Email: madonagino21@gmail.com</p> */}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mail.google.com/mail"
+            >
+              {" "}
+              <p>Email: madonagino21@gmail.com</p>
+            </a>
             <p className="sgquote">
               "Still the same girl with the same name. Just a different mindset
               and a new game."
