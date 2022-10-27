@@ -66,7 +66,7 @@ const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio!</span>
               </button>
             </HashLink> */}
-            <span className="tagline" onClick={() => console.log("connect")}>
+            <span>
               Hello, Friend! Welcome To My Coderland!
               {/* Welcome to my Portfolio! */}
             </span>
