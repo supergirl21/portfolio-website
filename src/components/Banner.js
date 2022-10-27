@@ -84,7 +84,7 @@ const Banner = () => {
               className="connect-button"
               onClick={() => console.log("connect")}
             >
-              Read My Coding Journey.. <ArrowRightCircle size={25} />
+              My Coding Journey.. <ArrowRightCircle size={25} />
             </button>
           </Col>
           {/* <Col xs={12} md={6}> */}
