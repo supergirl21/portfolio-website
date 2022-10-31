@@ -105,6 +105,13 @@ const Banner = () => {
                   }
                 >
                   <img src={dona1} alt="Header Img" />
+                  <p>
+                    <span>
+                      "My strong motivation and passion for technology as well
+                      as an eye for good design has brought me to where I am
+                      today."
+                    </span>
+                  </p>
                 </div>
               )}
             </TrackVisibility>
