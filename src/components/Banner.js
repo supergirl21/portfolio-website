@@ -66,15 +66,17 @@ const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio!</span>
               </button>
             </HashLink> */}
-            <span>
+            <p>
+              {/* <span> */}
               Hello, Friend! Welcome To My Coderland!
               {/* Welcome to my Portfolio! */}
-            </span>
+              {/* </span> */}
+            </p>
             {/* <p>
               <span>Ambitious and passionate</span>
             </p> */}
             <h1>
-              {"Hi, I'm Dona. "}
+              {"Hi, I'm Dona. Your "}
               <span className="wrap textColor">{text}</span>
             </h1>
 
@@ -86,6 +88,12 @@ const Banner = () => {
             >
               My Coding Journey.. <ArrowRightCircle size={25} />
             </button>
+            {/* <p>
+              <span>
+                My strong motivation and passion for technology as well as an
+                eye for good design has brought me to where I am today.
+              </span>
+            </p> */}
           </Col>
           {/* <Col xs={12} md={6}> */}
           <Col xs={12} md={6} xl={5}>

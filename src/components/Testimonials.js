@@ -36,7 +36,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="testimonial" id="testionials">
+    <section className="testimonial" id="testimonials">
       <Container>
         {/* <Row> */}
         <h2 className="testimonial-title">Testimonials</h2>

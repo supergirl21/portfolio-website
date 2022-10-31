@@ -11,6 +11,13 @@ import react from "../assets/img/React.svg";
 import html from "../assets/img/HTML.svg";
 import css from "../assets/img/CSS.svg";
 import python from "../assets/img/Python.svg";
+import bootstrap from "../assets/img/bootstrap.svg";
+import contentful from "../assets/img/Contentful.svg";
+import d3 from "../assets/img/D3.svg";
+import figma from "../assets/img/Figma.svg";
+import mailchimp from "../assets/img/MailChimp.svg";
+import materialUi from "../assets/img/Material_Ui.svg";
+import miro from "../assets/img/Miro.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 function Skills() {
@@ -42,7 +49,7 @@ function Skills() {
             <div className="skill-bx"></div>
             <h2 className="skill-title">Skills</h2>
             <h3 className="skill-description">
-              Here are my top 5 coding skills..
+              Here are my top coding skills..
             </h3>
             <Carousel
               responsive={responsive}
@@ -72,6 +79,34 @@ function Skills() {
               <div>
                 <img src={css} alt="css" height="200" />
                 <h5>CSS</h5>
+              </div>
+              <div>
+                <img src={materialUi} alt="react" height="200" />
+                <h5>Material UI</h5>
+              </div>
+              <div>
+                <img src={bootstrap} alt="react" height="200" />
+                <h5>Bootstrap</h5>
+              </div>
+              <div>
+                <img src={miro} alt="react" height="200" />
+                <h5>Miro</h5>
+              </div>
+              <div>
+                <img src={figma} alt="react" height="200" />
+                <h5>Figma</h5>
+              </div>
+              <div>
+                <img src={d3} alt="react" height="200" />
+                <h5>D3</h5>
+              </div>
+              <div>
+                <img src={contentful} alt="react" height="200" />
+                <h5>Contentful</h5>
+              </div>
+              <div>
+                <img src={mailchimp} alt="react" height="200" />
+                <h5>MailChimp</h5>
               </div>
             </Carousel>
           </Col>

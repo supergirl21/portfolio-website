@@ -75,7 +75,7 @@ function Projects() {
     },
   ];
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col>
@@ -86,7 +86,7 @@ function Projects() {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 > */}
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             {/* <h1>My Creative Portfolio Section</h1> */}
             <p>Take A Look At My Creative Portfolio Section.</p>
 

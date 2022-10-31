@@ -42,7 +42,7 @@ function Footer() {
               href="https://mail.google.com/mail"
             >
               {" "}
-              <p>Email: madonagino21@gmail.com</p>
+              <h5>Email: madonagino21@gmail.com</h5>
             </a>
             <p className="sgquote">
               "Still the same girl with the same name. Just a different mindset

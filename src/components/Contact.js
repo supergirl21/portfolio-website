@@ -70,6 +70,12 @@ function Contact() {
               )}
             </TrackVisibility> */}
             <img src={contactImg} alt="Contact" />
+            <p>
+              <span>
+                "My strong motivation and passion for technology as well as an
+                eye for good design has brought me to where I am today."
+              </span>
+            </p>
           </Col>
           <Col md={6}>
             <TrackVisibility>
@@ -79,8 +85,8 @@ function Contact() {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  {/* <h2>Get In Touch</h2> */}
-                  <h2>Take A Coffee & Chat With Me</h2>
+                  <h2>Get In Touch</h2>
+                  <h3>Take A Coffee & Chat With Me</h3>
                   <form onSubmit={{ handleSubmit }}>
                     <Row>
                       <Col sm={6}>

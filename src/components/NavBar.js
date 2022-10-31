@@ -50,7 +50,6 @@ function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            {/* <Nav defaultActiveKey="#home" className="ms-auto"> */}
             <Nav className="ms-auto">
               <Nav.Link
                 href="#about"
@@ -82,6 +81,7 @@ function NavBar() {
               >
                 Projects
               </Nav.Link>
+
               <Nav.Link
                 href="#testimonials"
                 className={
@@ -94,13 +94,13 @@ function NavBar() {
                 Testimonials
               </Nav.Link>
               <Nav.Link
-                href="#contact"
+                href="#connect"
                 className={
-                  activeLink === "contact"
+                  activeLink === "connect"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("contact")}
+                onClick={() => onUpdateActiveLink("connect")}
               >
                 Contact
               </Nav.Link>
