@@ -5,6 +5,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/react-in-jsx-scope */
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Container, Col, Row } from "react-bootstrap";
 import contactImg from "../assets/img/dona-contact-me.png";
 import TrackVisibility from "react-on-screen";
@@ -29,29 +30,50 @@ function Contact() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  // const form = useRef();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    // const result = response.json();
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else {
-      setStatus({
-        success: false,
-        message: "Something went wrong,please try again later.",
-      });
-    }
+
+    emailjs
+      .sendForm(
+        "service_q4yhsp8",
+        "template_xng3bzn",
+        formInitialDetails,
+        "XT9U7MnZenV-lB7cj"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
   };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Sending...");
+  //   let response = await fetch("http://localhost:5000/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(formDetails),
+  //   });
+  //   setButtonText("Send");
+  //   // const result = response.json();
+  //   let result = await response.json();
+  //   setFormDetails(formInitialDetails);
+  //   if (result.code === 200) {
+  //     setStatus({ success: true, message: "Message sent successfully" });
+  //   } else {
+  //     setStatus({
+  //       success: false,
+  //       message: "Something went wrong,please try again later.",
+  //     });
+  //   }
+  // };
 
   return (
     <section className="contact" id="connect">

@@ -12,6 +12,7 @@ import Projects from "./components/Projects";
 import ProjectCard from "./components/ProjectCard";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { ContactMe } from "./components/ContactMe";
 // import MailchimpForm from "./components/MailchimpForm";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Testimonials />
       <Contact />
       {/* <MailchimpForm /> */}
+      <ContactMe />
       <Footer />
     </div>
   );
